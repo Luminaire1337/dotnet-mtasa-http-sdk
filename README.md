@@ -54,9 +54,9 @@ using (Client client = new Client())
 ```csharp
 T response = await client.Call<T>(resourceName, functionName, parameters);
 ```
-`resourceName`: The name of the MTA:SA resource you want to execute the function on.
-`functionName`: The name of the server-side function to execute.
-`parameters (optional)`: Any parameters required by the server-side function.
+- `resourceName`: The name of the MTA:SA resource you want to execute the function on.
+- `functionName`: The name of the server-side function to execute.
+- `parameters` (optional): Any parameters required by the server-side function.
 Note: Make sure to replace `T` with the appropriate return type of the server-side function.
 
 4. Handle the response from the server-side function accordingly.
